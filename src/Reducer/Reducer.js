@@ -21,12 +21,9 @@ const initialState = {
   },
 };
 
-// /^[^\s@]+@([^\s@.,]+\.)+[^\s@.,]{2,}$/.test(state.item.email)
-
 const cancelConfirmModalFunc = (state) => {
   return { ...state, confirmModalIsOpen: !state.confirmModalIsOpen };
 };
-
 const confirmConfirmModalFunc = (state) => {
   return {
     ...state,
@@ -35,7 +32,6 @@ const confirmConfirmModalFunc = (state) => {
     createTaskModalIsOpen: !state.createTaskModalIsOpen,
   };
 };
-
 const openModalFunc = (state) => {
   return { ...state, createTaskModalIsOpen: !state.createTaskModalIsOpen };
 };
@@ -44,28 +40,70 @@ const closeModalFunc = (state) => {
   return { ...state, createTaskModalIsOpen: !state.createTaskModalIsOpen };
 };
 const cancelModalFunc = (state) => {
-  state.validation = { ...initialState.validation };
+  state.validation = { name: false, email: false, description: false };
   return { ...state, createTaskModalIsOpen: !state.createTaskModalIsOpen };
 };
-
 const editFunc = (state, action) => {
   state.editModal.editModalDefaultValue =
     state.itemList[action.index].description;
   state.editModal.editableItemIndex = action.index;
   return { ...state, editItemModalIsOpen: !state.editItemModalIsOpen };
 };
-
 const saveEditedTextFunc = (state) => {
   state.itemList[state.editModal.editableItemIndex].description =
     state.editModal.editModalDefaultValue;
   return { ...state, editItemModalIsOpen: !state.editItemModalIsOpen };
 };
-
 const editOnchangeFunc = (state, action) => {
   return {
     ...state,
     editModal: { ...state.editModal, editModalDefaultValue: action.value },
   };
+};
+const validationFunc = (state) => {
+  if (
+    state.item.name &&
+    /^[^\s@]+@([^\s@.,]+\.)+[^\s@.,]{2,}$/.test(state.item.email) &&
+    state.item.description
+  ) {
+    state.validation = { name: false, email: false, description: false };
+    return { ...state, confirmModalIsOpen: !state.confirmModalIsOpen };
+  } else {
+    if (!state.item.name && !state.validation.name) {
+      state.validation.name = !state.validation.name;
+    } else if (state.item.name && state.validation.name) {
+      state.validation.name = !state.validation.name;
+    }
+    if (!state.item.description && !state.validation.description) {
+      state.validation.description = !state.validation.description;
+    } else if (state.item.description && state.validation.description) {
+      state.validation.description = !state.validation.description;
+    }
+    if (
+      !/^[^\s@]+@([^\s@.,]+\.)+[^\s@.,]{2,}$/.test(state.item.email) &&
+      !state.validation.email
+    ) {
+      state.validation.email = !state.validation.email;
+    } else if (
+      /^[^\s@]+@([^\s@.,]+\.)+[^\s@.,]{2,}$/.test(state.item.email) &&
+      state.validation.email
+    ) {
+      state.validation.email = !state.validation.email;
+    }
+  }
+  return { ...state };
+};
+const formNameFieldFunc = (state, action) => {
+  return { ...state, item: { ...state.item, name: action.value } };
+};
+const formEmailFieldFunc = (state, action) => {
+  return { ...state, item: { ...state.item, email: action.value } };
+};
+const formDescriptionFieldFunc = (state, action) => {
+  return { ...state, item: { ...state.item, description: action.value } };
+};
+const closeEditItemModalFunc = (state) => {
+  return { ...state, editItemModalIsOpen: !state.editItemModalIsOpen };
 };
 
 export const reducer = (state = initialState, action) => {
@@ -76,21 +114,19 @@ export const reducer = (state = initialState, action) => {
     case "CloseModal":
       return closeModalFunc(state);
     case "CancelModal":
-      state.validation = { ...initialState.validation };
       return cancelModalFunc(state);
-
     case "CancelConfirmModal":
       return cancelConfirmModalFunc(state);
     case "ConfirmConfirmModal":
       return confirmConfirmModalFunc(state);
     case "FormNameField":
-      return { ...state, item: { ...state.item, name: action.value } };
+      return formNameFieldFunc(state, action);
     case "FormEmailField":
-      return { ...state, item: { ...state.item, email: action.value } };
+      return formEmailFieldFunc(state, action);
     case "FormDescriptionField":
-      return { ...state, item: { ...state.item, description: action.value } };
+      return formDescriptionFieldFunc(state, action);
     case "CloseEditItemModal":
-      return { ...state, editItemModalIsOpen: !state.editItemModalIsOpen };
+      return closeEditItemModalFunc(state);
     case "Edit":
       return editFunc(state, action);
     case "SaveEditedText":
@@ -98,34 +134,9 @@ export const reducer = (state = initialState, action) => {
     case "EditOnchange":
       return editOnchangeFunc(state, action);
     case "CreateTask":
-      if (
-        state.item.name &&
-        /^[^\s@]+@([^\s@.,]+\.)+[^\s@.,]{2,}$/.test(state.item.email) &&
-        state.item.description
-      ) {
-        return { ...state, confirmModalIsOpen: !state.confirmModalIsOpen };
-      } else {
-        if (!state.item.name && !state.validation.name) {
-          state.validation.name = !state.validation.name;
-        } else if (state.item.name && state.validation.name) {
-          state.validation.name = !state.validation.name;
-        }
-
-        if (!state.item.description && !state.validation.description) {
-          state.validation.name = !state.validation.description;
-        } else if (state.item.description && state.validation.description) {
-          state.validation.description = !state.validation.description;
-        }
-      }
-      return { ...state };
+      return validationFunc(state);
 
     default:
       return state;
   }
 };
-
-// validation: {
-//   name: false,
-//     email: false,
-//     description: false,
-// },
