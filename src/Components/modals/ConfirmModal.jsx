@@ -1,8 +1,8 @@
 import React from "react";
 import ReactModal from "react-modal";
 import styled from "styled-components";
-import StateHOC from "./HOC/StateHOC";
-import { CancelConfirmModal, ConfirmConfirmModal } from "../Actions/Actions";
+import StateHOC from "../HOC/StateHOC";
+import { CancelConfirmModal, ConfirmConfirmModal } from "../../Actions/Actions";
 
 const ConfirmModal = ({ state, dispatch }) => {
   return (

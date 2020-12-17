@@ -12,7 +12,7 @@ import {
   FormDescriptionField,
 } from "../../Actions/Actions";
 
-const Add = ({ state, dispatch }) => {
+const CreateItemFormModal = ({ state, dispatch }) => {
   return (
     <>
       <button onClick={() => dispatch(OpenModal)}>ADD button</button>
@@ -94,4 +94,4 @@ const AddForm = styled("div")`
   flex-direction: column;
 `;
 
-export default StateHOC(Add);
+export default StateHOC(CreateItemFormModal);

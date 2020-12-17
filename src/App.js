@@ -6,7 +6,7 @@ import styled from "styled-components";
 import Background from "./assets/images/seamless-pattern-colored-pencils-vector-876060.jpg";
 import axios from "axios";
 import Buttons from "./Components/Buttons";
-import ConfirmModal from "./Components/ConfirmModal";
+import ConfirmModal from "./Components/modals/ConfirmModal";
 
 const App = () => {
   const getUrl =
@@ -17,7 +17,7 @@ const App = () => {
   const funcGet = () => {
     axios.get(getUrl).then((res) => console.log(res, "GET"));
   };
-  const funcPost = () => {
+  const funcPost = ({ state, dispatch }) => {
     const form = new FormData();
     form.append("username", "ExampleTRE");
     form.append("email", "exampleTRE@example.com");

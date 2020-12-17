@@ -2,20 +2,32 @@ import React from "react";
 import StateHOC from "./HOC/StateHOC";
 import ToDoItem from "./ToDoItem";
 import styled from "styled-components";
-import Add from "./Add";
+import { Provider } from "react-redux";
+import { CreateTask } from "../Actions/Actions";
+import EditItemModal from "./modals/EditItemModal";
 
 const ToDoList = ({ state, dispatch }) => {
   return (
     <>
+      <EditItemModal />
       <ListHeader>
         <ToDoItem
           name={"name"}
           email={"email"}
-          taskDescription={"taskDescription"}
+          description={"description"}
           status={"status"}
-          editTask={"editTask"}
         />
       </ListHeader>
+      {state.itemList.map((i, index) => (
+        <ToDoItem
+          key={new Date() + index}
+          name={i.name}
+          email={i.email}
+          description={i.description}
+          status={i.status}
+          index={index}
+        />
+      ))}
     </>
   );
 };

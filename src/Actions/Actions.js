@@ -1,6 +1,13 @@
 export const OpenModal = { type: "OpenModal" };
 export const CloseModal = { type: "CloseModal" };
 export const CancelModal = { type: "CancelModal" };
-export const CreateModal = { type: "CreateModal" };
-export const CreateConfirmModal = { type: "CreateConfirmModal" };
+export const CreateTask = { type: "CreateTask" };
+export const ConfirmConfirmModal = { type: "ConfirmConfirmModal" };
 export const CancelConfirmModal = { type: "CancelConfirmModal" };
+export const FormNameField = { type: "FormNameField", value: "" };
+export const FormEmailField = { type: "FormEmailField", value: "" };
+export const FormDescriptionField = { type: "FormDescriptionField", value: "" };
+export const Edit = { type: "Edit", index: "" };
+export const CloseEditItemModal = { type: "CloseEditItemModal" };
+export const SaveEditedText = { type: "SaveEditedText" };
+export const EditOnchange = { type: "EditOnchange", value: "" };

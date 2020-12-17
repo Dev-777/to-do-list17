@@ -1,24 +1,32 @@
 import React from "react";
 import StateHOC from "./HOC/StateHOC";
 import styled from "styled-components";
+import { Edit } from "../Actions/Actions";
 
 const ToDoItem = ({
   state,
   dispatch,
   name,
   email,
-  taskDescription,
+  description,
   status,
-  editTask,
+  index,
 }) => {
   return (
     <>
       <Item>
         <ItemElement>{name}</ItemElement>
         <ItemElement>{email}</ItemElement>
-        <ItemElement>{taskDescription}</ItemElement>
+        <ItemElement>{description}</ItemElement>
         <ItemElement>{status}</ItemElement>
-        <ItemElement>{editTask}</ItemElement>
+        <button
+          onClick={() => {
+            Edit.index = index;
+            return dispatch(Edit);
+          }}
+        >
+          Edit
+        </button>
       </Item>
     </>
   );
