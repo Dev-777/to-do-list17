@@ -1,10 +1,9 @@
 import axios from "axios";
-
 export const getFunc = () => {
   axios({
     method: "get",
-    url: "https://crudcrud.com/api/9ab57387487f4caa98989aff6d9b379d",
-  }).then((res) => res.data);
+    url: "https://5fe0a87c04f0780017de92b5.mockapi.io/AS7/Arsen",
+  }).then((res) => res.data.data);
 };
 
 export const postFunc = (state) => {
@@ -14,23 +13,23 @@ export const postFunc = (state) => {
   };
 
   axios
-    .post("https://crudcrud.com/api/9ab57387487f4caa98989aff6d9b379d", config)
+    .post("https://5fe0a87c04f0780017de92b5.mockapi.io/AS7/Arsen", config)
     .then((response) => console.log(response, "post"));
 };
 
-const putFunc = () => {
+export const putFunc = () => {
   const config = {
     withCredentials: true,
-    data: {
-      name: "change 1700000000",
-      age: 19,
-    },
+    data: {},
   };
 
   axios
-    .put(
-      "https://crudcrud.com/api/9ab57387487f4caa98989aff6d9b379d/test172317/5fdcc153e445ab03e8f70e16",
-      config
-    )
-    .then((response) => console.log("post"));
+    .put("https://5fe0a87c04f0780017de92b5.mockapi.io/AS7/Arsen", config)
+    .then((response) => console.log("put"));
+};
+
+export const deleteFunc = () => {
+  axios
+    .delete("https://5fe0a87c04f0780017de92b5.mockapi.io/AS7/Arsen/5")
+    .then((response) => console.log("delete"));
 };

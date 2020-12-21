@@ -63,3 +63,10 @@ export const putData = (dataFromServer) => {
 export const loadData = () => {
   return { type: LOAD_DATA };
 };
+
+export const pushData = (dataForServer) => {
+  return {
+    type: PUSH_DATA,
+    dataFromServer: dataForServer,
+  };
+};

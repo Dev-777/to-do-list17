@@ -1,10 +1,5 @@
-import { put, takeLatest, call, all } from "redux-saga/effects";
-import {
-  LOAD_DATA,
-  confirmConfirmModal,
-  putData,
-  CONFIRM_CONFIRM_MODAL,
-} from "./Actions";
+import { put, takeLatest, call, all, select } from "redux-saga/effects";
+import { LOAD_DATA, putData, CONFIRM_CONFIRM_MODAL } from "./Actions";
 import { getFunc, postFunc } from "./Api";
 
 function* workerLoadData() {
@@ -17,8 +12,9 @@ function* watchLoadData() {
 }
 
 function* workerPushData() {
-  const data = yield call(() => postFunc());
-  yield put(putData(data));
+  const state = yield select();
+  postFunc(state);
+  yield;
 }
 
 function* watchPushData() {

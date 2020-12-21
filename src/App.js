@@ -1,23 +1,27 @@
-import React from "react";
-import { store } from "./Store";
+import React, { useEffect } from "react";
 import ToDoList from "./Components/ToDoList";
-import { Provider } from "react-redux";
 import styled from "styled-components";
 import Background from "./assets/images/seamless-pattern-colored-pencils-vector-876060.jpg";
 import Buttons from "./Components/Buttons";
 import ConfirmModal from "./Components/modals/ConfirmModal";
 import Loading from "./Components/Loading";
+import { getFunc } from "./Api";
+import StateHOC from "./Components/HOC/StateHOC";
 
-const App = () => {
+const App = ({ state, dispatch }) => {
+  useEffect(() => {
+    (async () => {
+      const val = await getFunc();
+      await console.log(val, "aaaa");
+    })();
+  });
+
   return (
     <AppWrapper className="App">
-      <Provider store={store}>
-        <Buttons />
-        <ConfirmModal />
-        <Loading />
-
-        <ToDoList />
-      </Provider>
+      <Buttons />
+      <ConfirmModal />
+      <Loading />
+      <ToDoList />
     </AppWrapper>
   );
 };
@@ -27,4 +31,4 @@ const AppWrapper = styled("div")`
   background-image: url(${Background});
 `;
 
-export default App;
+export default StateHOC(App);

@@ -2,25 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c960a763-626b-4eb1-947c-bb56fd506e19" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Api.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/Loading.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Store.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sagas.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Actions/Actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Actions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Actions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Api.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/Buttons.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Buttons.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/ToDoItem.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/ToDoItem.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/ToDoList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/ToDoList.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/modals/ConfirmModal.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/modals/ConfirmModal.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/modals/CreateItemFormModal.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/modals/CreateItemFormModal.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/modals/EditItemModal.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/modals/EditItemModal.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Reducer/Reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Reducer/Reducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Reducer/ReducerFunctions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Reducer/ReducerFunctions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Store/Store.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sagas.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/sagas.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +79,7 @@
       <workItem from="1607855149108" duration="232000" />
       <workItem from="1607855444905" duration="20787000" />
       <workItem from="1608080224470" duration="8632000" />
-      <workItem from="1608533854101" duration="14048000" />
+      <workItem from="1608533854101" duration="24599000" />
     </task>
     <servers />
   </component>
