@@ -1,8 +1,7 @@
 import React from "react";
 import ReactModal from "react-modal";
-import styled from "styled-components";
 import StateHOC from "../HOC/StateHOC";
-import { CancelConfirmModal, ConfirmConfirmModal } from "../../Actions/Actions";
+import { cancelConfirmModal, confirmConfirmModal } from "../../Actions";
 
 const ConfirmModal = ({ state, dispatch }) => {
   return (
@@ -23,8 +22,8 @@ const ConfirmModal = ({ state, dispatch }) => {
         shouldCloseOnOverlayClick={true}
         shouldCloseOnEsc={false}
       >
-        <button onClick={() => dispatch(ConfirmConfirmModal)}>Confirm</button>
-        <button onClick={() => dispatch(CancelConfirmModal)}>Cancel</button>
+        <button onClick={() => dispatch(confirmConfirmModal())}>Confirm</button>
+        <button onClick={() => dispatch(cancelConfirmModal())}>Cancel</button>
       </ReactModal>
     </>
   );

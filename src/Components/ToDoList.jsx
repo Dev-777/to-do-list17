@@ -2,8 +2,6 @@ import React from "react";
 import StateHOC from "./HOC/StateHOC";
 import ToDoItem from "./ToDoItem";
 import styled from "styled-components";
-import { Provider } from "react-redux";
-import { CreateTask } from "../Actions/Actions";
 import EditItemModal from "./modals/EditItemModal";
 
 const ToDoList = ({ state, dispatch }) => {

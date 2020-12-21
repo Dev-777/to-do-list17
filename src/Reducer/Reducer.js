@@ -40,31 +40,33 @@ const initialState = {
 export const reducer = (state = initialState, action) => {
   console.log(state, "state");
   switch (action.type) {
-    case "OpenModal":
+    case "PUT_DATA":
+      return { ...state, itemList: [...state.itemList, action.dataFromServer] };
+    case "OPEN_MODAL":
       return openModalFunc(state);
-    case "CloseModal":
+    case "CLOSE_MODAL":
       return closeModalFunc(state);
-    case "CancelModal":
+    case "CANCEL_MODAL":
       return cancelModalFunc(state);
-    case "CancelConfirmModal":
+    case "CANCEL_CONFIRM_MODAL":
       return cancelConfirmModalFunc(state);
-    case "ConfirmConfirmModal":
+    case "CONFIRM_CONFIRM_MODAL":
       return confirmConfirmModalFunc(state);
-    case "FormNameField":
+    case "FORM_NAME_FIELD":
       return formNameFieldFunc(state, action);
-    case "FormEmailField":
+    case "FORM_EMAIL_FIELD":
       return formEmailFieldFunc(state, action);
-    case "FormDescriptionField":
+    case "FORM_DESCRIPTION_FIELD":
       return formDescriptionFieldFunc(state, action);
-    case "CloseEditItemModal":
+    case "CLOSE_EDIT_ITEM_MODAL":
       return closeEditItemModalFunc(state);
-    case "Edit":
+    case "EDIT":
       return editFunc(state, action);
-    case "SaveEditedText":
+    case "SAVE_EDITED_TEXT":
       return saveEditedTextFunc(state);
-    case "EditOnchange":
+    case "EDIT_ONCHANGE":
       return editOnchangeFunc(state, action);
-    case "CreateTask":
+    case "CREATE_TASK":
       return validationFunc(state);
 
     default:

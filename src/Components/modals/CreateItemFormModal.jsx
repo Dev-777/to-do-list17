@@ -3,19 +3,19 @@ import ReactModal from "react-modal";
 import styled from "styled-components";
 import StateHOC from "../HOC/StateHOC";
 import {
-  OpenModal,
-  CloseModal,
-  CancelModal,
-  CreateTask,
-  FormNameField,
-  FormEmailField,
-  FormDescriptionField,
-} from "../../Actions/Actions";
+  openModal,
+  closeModal,
+  cancelModal,
+  createTask,
+  formNameField,
+  formEmailField,
+  formDescriptionField,
+} from "../../Actions";
 
 const CreateItemFormModal = ({ state, dispatch }) => {
   return (
     <>
-      <button onClick={() => dispatch(OpenModal)}>ADD button</button>
+      <button onClick={() => dispatch(openModal())}>ADD button</button>
       <ReactModal
         isOpen={state.createTaskModalIsOpen}
         ariaHideApp={false}
@@ -33,15 +33,14 @@ const CreateItemFormModal = ({ state, dispatch }) => {
         shouldCloseOnOverlayClick={true}
         shouldCloseOnEsc={false}
       >
-        <button onClick={() => dispatch(CloseModal)}>close</button>
+        <button onClick={() => dispatch(closeModal())}>close</button>
         <AddForm>
           <label>
             Name
             <input
               type="text"
               onChange={(e) => {
-                FormNameField.value = e.target.value;
-                return dispatch(FormNameField);
+                return dispatch(formNameField(e.target.value));
               }}
             />
             <br />
@@ -56,8 +55,7 @@ const CreateItemFormModal = ({ state, dispatch }) => {
             <input
               type="email"
               onChange={(e) => {
-                FormEmailField.value = e.target.value;
-                return dispatch(FormEmailField);
+                return dispatch(formEmailField(e.target.value));
               }}
             />
             <br />
@@ -70,8 +68,7 @@ const CreateItemFormModal = ({ state, dispatch }) => {
             <input
               type="text"
               onChange={(e) => {
-                FormDescriptionField.value = e.target.value;
-                return dispatch(FormDescriptionField);
+                return dispatch(formDescriptionField(e.target.value));
               }}
             />
             <br />
@@ -81,8 +78,8 @@ const CreateItemFormModal = ({ state, dispatch }) => {
               </span>
             ) : null}
           </label>
-          <button onClick={() => dispatch(CreateTask)}>CreateTask</button>
-          <button onClick={() => dispatch(CancelModal)}>Cancel</button>
+          <button onClick={() => dispatch(createTask())}>CreateTask</button>
+          <button onClick={() => dispatch(cancelModal())}>Cancel</button>
         </AddForm>
       </ReactModal>
     </>

@@ -1,7 +1,7 @@
 import React from "react";
 import StateHOC from "./HOC/StateHOC";
 import styled from "styled-components";
-import { Edit } from "../Actions/Actions";
+import { edit } from "../Actions";
 
 const ToDoItem = ({
   state,
@@ -21,8 +21,7 @@ const ToDoItem = ({
         <ItemElement>{status}</ItemElement>
         <button
           onClick={() => {
-            Edit.index = index;
-            return dispatch(Edit);
+            return dispatch(edit(index));
           }}
         >
           Edit

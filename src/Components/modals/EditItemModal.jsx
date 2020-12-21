@@ -1,13 +1,11 @@
 import React from "react";
 import ReactModal from "react-modal";
-import styled from "styled-components";
 import StateHOC from "../HOC/StateHOC";
 import {
-  CloseEditItemModal,
-  ConfirmConfirmModal,
-  EditOnchange,
-  SaveEditedText,
-} from "../../Actions/Actions";
+  closeEditItemModal,
+  editOnchange,
+  saveEditedText,
+} from "../../Actions";
 
 const EditItemModal = ({ state, dispatch }) => {
   return (
@@ -34,13 +32,12 @@ const EditItemModal = ({ state, dispatch }) => {
           rows="10"
           style={{ resize: "none" }}
           onChange={(e) => {
-            EditOnchange.value = e.target.value;
-            return dispatch(EditOnchange);
+            return dispatch(editOnchange(e.target.value));
           }}
         />
         <div>
-          <button onClick={() => dispatch(SaveEditedText)}>Save</button>
-          <button onClick={() => dispatch(CloseEditItemModal)}>Cancel</button>
+          <button onClick={() => dispatch(saveEditedText())}>Save</button>
+          <button onClick={() => dispatch(closeEditItemModal())}>Cancel</button>
         </div>
       </ReactModal>
     </>

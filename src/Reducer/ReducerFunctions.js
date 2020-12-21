@@ -4,7 +4,6 @@ export const cancelConfirmModalFunc = (state) => {
 export const confirmConfirmModalFunc = (state) => {
   return {
     ...state,
-    itemList: [...state.itemList, state.item],
     confirmModalIsOpen: !state.confirmModalIsOpen,
     createTaskModalIsOpen: !state.createTaskModalIsOpen,
   };
