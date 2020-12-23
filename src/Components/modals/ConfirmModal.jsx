@@ -1,7 +1,11 @@
 import React from "react";
 import ReactModal from "react-modal";
 import StateHOC from "../HOC/StateHOC";
-import { cancelConfirmModal, confirmConfirmModal } from "../../Actions";
+import {
+  cancelConfirmModal,
+  confirmConfirmModal,
+  loadData,
+} from "../../Actions";
 
 const ConfirmModal = ({ state, dispatch }) => {
   return (

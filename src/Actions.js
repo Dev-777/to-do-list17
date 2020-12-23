@@ -14,6 +14,11 @@ export const EDIT_ONCHANGE = "EDIT_ONCHANGE";
 export const PUT_DATA = "PUT_DATA";
 export const LOAD_DATA = "LOAD_DATA";
 export const PUSH_DATA = "PUSH_DATA";
+export const MOUNT_DISPATCH = "MOUNT_DISPATCH";
+
+export const mountDispatch = () => {
+  return { type: MOUNT_DISPATCH };
+};
 
 export const editOnchange = (VALUE) => {
   return { type: EDIT_ONCHANGE, value: VALUE };
@@ -67,6 +72,5 @@ export const loadData = () => {
 export const pushData = (dataForServer) => {
   return {
     type: PUSH_DATA,
-    dataFromServer: dataForServer,
   };
 };

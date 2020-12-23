@@ -1,20 +1,25 @@
 import axios from "axios";
+
+const url = "https://5fe1946a04f0780017de9dfa.mockapi.io/AS/todo";
+
 export const getFunc = () => {
-  axios({
+  return axios({
     method: "get",
-    url: "https://5fe0a87c04f0780017de92b5.mockapi.io/AS7/Arsen",
-  }).then((res) => res.data.data);
+    url: url,
+  }).then((res) => res.data);
 };
 
 export const postFunc = (state) => {
+  console.log(state, "post State");
   const config = {
     withCredentials: true,
-    data: state.item,
+    name: state.item.name,
+    email: state.item.email,
+    description: state.item.description,
+    status: "In progress",
   };
 
-  axios
-    .post("https://5fe0a87c04f0780017de92b5.mockapi.io/AS7/Arsen", config)
-    .then((response) => console.log(response, "post"));
+  axios.post(url, config).then((response) => console.log(response, "post"));
 };
 
 export const putFunc = () => {
@@ -23,13 +28,11 @@ export const putFunc = () => {
     data: {},
   };
 
-  axios
-    .put("https://5fe0a87c04f0780017de92b5.mockapi.io/AS7/Arsen", config)
-    .then((response) => console.log("put"));
+  return axios.put(url, config).then((response) => console.log("put"));
 };
 
 export const deleteFunc = () => {
-  axios
-    .delete("https://5fe0a87c04f0780017de92b5.mockapi.io/AS7/Arsen/5")
+  return axios
+    .delete(`https://5fe1946a04f0780017de9dfa.mockapi.io/AS/todo/`)
     .then((response) => console.log("delete"));
 };

@@ -18,6 +18,7 @@ const initialState = {
   createTaskModalIsOpen: false,
   confirmModalIsOpen: false,
   editItemModalIsOpen: false,
+  loadList: true,
   item: {
     name: "",
     email: "",
@@ -40,8 +41,13 @@ const initialState = {
 export const reducer = (state = initialState, action) => {
   console.log(state, "state");
   switch (action.type) {
+    case "PUSH_DATA":
+      state.loadList = !state.loadList;
+      console.log("reducer part");
+      return { ...state };
     case "PUT_DATA":
-      return { ...state, itemList: [...state.itemList, action.dataFromServer] };
+      console.log("dd");
+      return { ...state, itemList: [...action.dataFromServer] };
     case "OPEN_MODAL":
       return openModalFunc(state);
     case "CLOSE_MODAL":

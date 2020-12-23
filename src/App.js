@@ -5,19 +5,28 @@ import Background from "./assets/images/seamless-pattern-colored-pencils-vector-
 import Buttons from "./Components/Buttons";
 import ConfirmModal from "./Components/modals/ConfirmModal";
 import Loading from "./Components/Loading";
-import { getFunc } from "./Api";
+import { deleteFunc, getFunc, postFunc, putFunc } from "./Api";
 import StateHOC from "./Components/HOC/StateHOC";
+import { loadData } from "./Actions";
 
 const App = ({ state, dispatch }) => {
+  const showFunc = () => {
+    dispatch(loadData());
+  };
+
   useEffect(() => {
-    (async () => {
-      const val = await getFunc();
-      await console.log(val, "aaaa");
-    })();
-  });
+    console.log(
+      "change---------------------------------------------------------------------------"
+    );
+  }, [state.loadList]);
 
   return (
     <AppWrapper className="App">
+      <button onClick={getFunc}>get</button>
+      <button onClick={postFunc}>post</button>
+      <button onClick={putFunc}>put</button>
+      <button onClick={deleteFunc}>del</button>
+      <button>{state.loadList ? "true" : "false"}</button>
       <Buttons />
       <ConfirmModal />
       <Loading />
