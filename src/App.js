@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useMemo } from "react";
 import ToDoList from "./Components/ToDoList";
 import styled from "styled-components";
 import Background from "./assets/images/seamless-pattern-colored-pencils-vector-876060.jpg";
@@ -10,11 +10,8 @@ import StateHOC from "./Components/HOC/StateHOC";
 import { loadData } from "./Actions";
 
 const App = ({ state, dispatch }) => {
-  const showFunc = () => {
+  useMemo(() => {
     dispatch(loadData());
-  };
-
-  useEffect(() => {
     console.log(
       "change---------------------------------------------------------------------------"
     );
@@ -26,10 +23,9 @@ const App = ({ state, dispatch }) => {
       <button onClick={postFunc}>post</button>
       <button onClick={putFunc}>put</button>
       <button onClick={deleteFunc}>del</button>
-      <button>{state.loadList ? "true" : "false"}</button>
+      {!state.loadList ? <Loading /> : null}
       <Buttons />
       <ConfirmModal />
-      <Loading />
       <ToDoList />
     </AppWrapper>
   );

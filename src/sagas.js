@@ -1,6 +1,7 @@
 import { put, takeLatest, call, all, select } from "redux-saga/effects";
 import { LOAD_DATA, putData, CONFIRM_CONFIRM_MODAL, pushData } from "./Actions";
-import { getFunc, postFunc } from "./Api";
+import { getFunc } from "./Api";
+import axios from "axios";
 
 function* workerLoadData() {
   const data = yield call(() => getFunc());
@@ -13,7 +14,18 @@ function* watchLoadData() {
 
 function* workerPushData() {
   const state = yield select();
-  postFunc(state);
+  yield axios
+    .post("https://5fe1946a04f0780017de9dfa.mockapi.io/AS/todo", {
+      withCredentials: true,
+      name: state.item.name,
+      email: state.item.email,
+      description: state.item.description,
+      status: "In progress",
+    })
+    .then(() => {
+      console.log("post!");
+    });
+
   yield put(pushData());
 }
 

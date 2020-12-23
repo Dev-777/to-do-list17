@@ -42,11 +42,10 @@ export const reducer = (state = initialState, action) => {
   console.log(state, "state");
   switch (action.type) {
     case "PUSH_DATA":
-      state.loadList = !state.loadList;
-      console.log("reducer part");
+      state.loadList = false;
       return { ...state };
     case "PUT_DATA":
-      console.log("dd");
+      state.loadList = true;
       return { ...state, itemList: [...action.dataFromServer] };
     case "OPEN_MODAL":
       return openModalFunc(state);

@@ -4,10 +4,7 @@
     <list default="true" id="c960a763-626b-4eb1-947c-bb56fd506e19" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Actions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Api.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/modals/ConfirmModal.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/modals/ConfirmModal.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Reducer/Reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Reducer/Reducer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sagas.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/sagas.js" afterDir="false" />
     </list>
@@ -84,7 +81,7 @@
       <workItem from="1608627195552" duration="6734000" />
       <workItem from="1608635402595" duration="2390000" />
       <workItem from="1608637813699" duration="8661000" />
-      <workItem from="1608704924727" duration="96000" />
+      <workItem from="1608704924727" duration="8599000" />
     </task>
     <servers />
   </component>
