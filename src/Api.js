@@ -28,7 +28,7 @@ export const putFunc = () => {
     data: {},
   };
 
-  return axios.put(url, config).then((response) => console.log("put"));
+  return axios.put(url, config).then(() => console.log("put"));
 };
 
 export const deleteFunc = () => {

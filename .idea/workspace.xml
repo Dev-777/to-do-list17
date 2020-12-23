@@ -2,9 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c960a763-626b-4eb1-947c-bb56fd506e19" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Components/TestApi.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Actions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Api.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/modals/EditItemModal.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/modals/EditItemModal.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Reducer/Reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Reducer/Reducer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sagas.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/sagas.js" afterDir="false" />
     </list>

@@ -43,6 +43,12 @@ export const reducer = (state = initialState, action) => {
   switch (action.type) {
     case "PUSH_DATA":
       state.loadList = false;
+      if (state.editItemModalIsOpen) {
+        console.log("t!");
+        state.editItemModalIsOpen = !state.editItemModalIsOpen;
+      }
+      console.log("t!!!");
+
       return { ...state };
     case "PUT_DATA":
       state.loadList = true;
@@ -65,12 +71,14 @@ export const reducer = (state = initialState, action) => {
       return formDescriptionFieldFunc(state, action);
     case "CLOSE_EDIT_ITEM_MODAL":
       return closeEditItemModalFunc(state);
+
     case "EDIT":
       return editFunc(state, action);
     case "SAVE_EDITED_TEXT":
       return saveEditedTextFunc(state);
     case "EDIT_ONCHANGE":
       return editOnchangeFunc(state, action);
+
     case "CREATE_TASK":
       return validationFunc(state);
 

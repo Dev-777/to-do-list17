@@ -1,5 +1,11 @@
 import { put, takeLatest, call, all, select } from "redux-saga/effects";
-import { LOAD_DATA, putData, CONFIRM_CONFIRM_MODAL, pushData } from "./Actions";
+import {
+  LOAD_DATA,
+  putData,
+  CONFIRM_CONFIRM_MODAL,
+  pushData,
+  EDIT_MODAL_SAVE_BUTTON,
+} from "./Actions";
 import { getFunc } from "./Api";
 import axios from "axios";
 
@@ -33,6 +39,29 @@ function* watchPushData() {
   yield takeLatest(CONFIRM_CONFIRM_MODAL, workerPushData);
 }
 
+/////////////////////////////////////////////////////////////////
+function* workerUpdateData() {
+  const state = yield select();
+  yield axios
+    .put(
+      `https://5fe1946a04f0780017de9dfa.mockapi.io/AS/todo/${
+        state.editModal.editableItemIndex + 1
+      }`,
+      {
+        description: state.editModal.editModalDefaultValue,
+      }
+    )
+    .then(() => console.log("put"));
+
+  yield put(pushData());
+}
+
+function* watchUpdateData() {
+  yield takeLatest(EDIT_MODAL_SAVE_BUTTON, workerUpdateData);
+}
+
+/////////////////////////////////////////////////////////////////
+
 export function* rootSaga() {
-  yield all([watchLoadData(), watchPushData()]);
+  yield all([watchLoadData(), watchPushData(), watchUpdateData()]);
 }

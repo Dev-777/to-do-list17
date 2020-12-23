@@ -3,6 +3,7 @@ import ReactModal from "react-modal";
 import StateHOC from "../HOC/StateHOC";
 import {
   closeEditItemModal,
+  editModalSaveButton,
   editOnchange,
   saveEditedText,
 } from "../../Actions";
@@ -36,7 +37,7 @@ const EditItemModal = ({ state, dispatch }) => {
           }}
         />
         <div>
-          <button onClick={() => dispatch(saveEditedText())}>Save</button>
+          <button onClick={() => dispatch(editModalSaveButton())}>Save</button>
           <button onClick={() => dispatch(closeEditItemModal())}>Cancel</button>
         </div>
       </ReactModal>
