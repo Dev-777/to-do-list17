@@ -1,17 +1,10 @@
 import React from "react";
-import StateHOC from "./HOC/StateHOC";
 import styled from "styled-components";
 import { edit } from "../Actions";
+import { useDispatch } from "react-redux";
 
-const ListItem = ({
-  state,
-  dispatch,
-  name,
-  email,
-  description,
-  status,
-  index,
-}) => {
+const ListItem = ({ name, email, description, status, index }) => {
+  const dispatch = useDispatch();
   return (
     <>
       <Main>
@@ -49,7 +42,6 @@ const Main = styled("div")`
   margin: 5px 0 0 0;
   border-radius: 3px;
 `;
-
 const HeaderItem = styled("div")`
   width: 23%;
   display: flex;
@@ -66,7 +58,6 @@ const HeaderItemEdit = styled(HeaderItem)`
   width: 8%;
   border: 0;
 `;
-
 const EditButton = styled("div")``;
 
-export default StateHOC(ListItem);
+export default ListItem;

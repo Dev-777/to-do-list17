@@ -4,8 +4,11 @@ import ToDoItem from "./ListItem";
 import styled from "styled-components";
 import EditItemModal from "./modals/EditItemModal";
 import ListHeader from "./ListHeader";
+import { useSelector } from "react-redux";
 
-const ToDoList = ({ state, dispatch }) => {
+const ToDoList = () => {
+  const state = useSelector((state) => state);
+
   return (
     <>
       <EditItemModal />
@@ -39,4 +42,4 @@ const List = styled("div")`
   height: 70vh;
 `;
 
-export default StateHOC(ToDoList);
+export default ToDoList;

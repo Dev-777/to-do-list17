@@ -13,10 +13,12 @@ export const openModalFunc = (state) => {
 };
 export const closeModalFunc = (state) => {
   state.validation = { name: false, email: false, description: false };
+  state.item = { name: "", email: "", description: "", status: "In progress" };
   return { ...state, createTaskModalIsOpen: !state.createTaskModalIsOpen };
 };
 export const cancelModalFunc = (state) => {
   state.validation = { name: false, email: false, description: false };
+  state.item = { name: "", email: "", description: "", status: "In progress" };
   return { ...state, createTaskModalIsOpen: !state.createTaskModalIsOpen };
 };
 export const editFunc = (state, action) => {

@@ -1,13 +1,11 @@
 import React from "react";
 import ReactModal from "react-modal";
-import StateHOC from "../HOC/StateHOC";
-import {
-  cancelConfirmModal,
-  confirmConfirmModal,
-  loadData,
-} from "../../Actions";
+import { cancelConfirmModal, confirmConfirmModal } from "../../Actions";
+import { useDispatch, useSelector } from "react-redux";
 
-const ConfirmModal = ({ state, dispatch }) => {
+const ConfirmModal = () => {
+  const state = useSelector((state) => state);
+  const dispatch = useDispatch();
   return (
     <>
       <ReactModal
@@ -33,4 +31,4 @@ const ConfirmModal = ({ state, dispatch }) => {
   );
 };
 
-export default StateHOC(ConfirmModal);
+export default ConfirmModal;

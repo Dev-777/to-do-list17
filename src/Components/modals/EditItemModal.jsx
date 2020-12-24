@@ -5,10 +5,12 @@ import {
   closeEditItemModal,
   editModalSaveButton,
   editOnchange,
-  saveEditedText,
 } from "../../Actions";
+import { useDispatch, useSelector } from "react-redux";
 
-const EditItemModal = ({ state, dispatch }) => {
+const EditItemModal = () => {
+  const state = useSelector((state) => state);
+  const dispatch = useDispatch();
   return (
     <>
       <ReactModal
@@ -45,4 +47,4 @@ const EditItemModal = ({ state, dispatch }) => {
   );
 };
 
-export default StateHOC(EditItemModal);
+export default EditItemModal;

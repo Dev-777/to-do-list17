@@ -11,8 +11,11 @@ import {
   formEmailField,
   formDescriptionField,
 } from "../../Actions";
+import { useDispatch, useSelector } from "react-redux";
 
-const CreateItemFormModal = ({ state, dispatch }) => {
+const CreateItemFormModal = () => {
+  const state = useSelector((state) => state);
+  const dispatch = useDispatch();
   return (
     <>
       <button onClick={() => dispatch(openModal())}>+</button>
@@ -91,4 +94,4 @@ const AddForm = styled("div")`
   flex-direction: column;
 `;
 
-export default StateHOC(CreateItemFormModal);
+export default CreateItemFormModal;
