@@ -30,7 +30,6 @@ const ToDoList = ({ state, dispatch }) => {
 
 const ToDo = styled("div")`
   width: 50%;
-  padding: 0 5px;
   margin: 30px auto;
   box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
 `;

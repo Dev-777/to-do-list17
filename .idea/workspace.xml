@@ -2,11 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c960a763-626b-4eb1-947c-bb56fd506e19" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Components/ListHeader.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/AppHeader.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TTT.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Tests/Test.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/ToDoItem.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/ListItem.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Buttons.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/TestApi.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tests/TestApi.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/ToDoList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/ToDoList.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/modals/CreateItemFormModal.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/modals/CreateItemFormModal.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,6 +65,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/Tests" />
       <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/src/Components/modals" />
       <recent name="$PROJECT_DIR$/../to-do-listReal" />
@@ -82,6 +88,7 @@
       <workItem from="1608635402595" duration="2390000" />
       <workItem from="1608637813699" duration="8661000" />
       <workItem from="1608704924727" duration="8599000" />
+      <workItem from="1608791649092" duration="5217000" />
     </task>
     <servers />
   </component>

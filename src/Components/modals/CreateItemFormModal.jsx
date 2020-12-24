@@ -15,7 +15,7 @@ import {
 const CreateItemFormModal = ({ state, dispatch }) => {
   return (
     <>
-      <button onClick={() => dispatch(openModal())}>ADD button</button>
+      <button onClick={() => dispatch(openModal())}>+</button>
       <ReactModal
         isOpen={state.createTaskModalIsOpen}
         ariaHideApp={false}
