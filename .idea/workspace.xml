@@ -1,42 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c960a763-626b-4eb1-947c-bb56fd506e19" name="Default Changelist" comment="">
+    <list default="true" id="e167370b-0db9-4678-bc26-bd8e280a0d92" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/ListItem.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/ListItem.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/ToDoList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/ToDoList.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/modals/ConfirmModal.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/modals/ConfirmModal.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/modals/CreateItemFormModal.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/modals/CreateItemFormModal.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/modals/EditItemModal.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/modals/EditItemModal.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Reducer/ReducerFunctions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Reducer/ReducerFunctions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TTT.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="JavaScript File" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-        <entry key="$PROJECT_DIR$" value="master" />
-      </map>
-    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="1lb9tAwkYRhuXYSOrLARLnF0k82" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
+  <component name="ProjectId" id="1m9DB0OSA9Iz5G0BffjY336EYvI" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
     <option name="autoscrollToSource" value="true" />
@@ -45,73 +23,35 @@
     <option name="sortByType" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
-    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="dart.analysis.tool.window.visible" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../saga" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
-    <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
-    <property name="node.js.path.for.package.standard" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="node.js.selected.package.standard" value="" />
-    <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="$PROJECT_DIR$/node_modules/prettier" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
     <property name="vue.rearranger.settings.migration" value="true" />
-  </component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/Tests" />
-      <recent name="$PROJECT_DIR$/src" />
-      <recent name="$PROJECT_DIR$/src/Components/modals" />
-      <recent name="$PROJECT_DIR$/../to-do-listReal" />
-    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="c960a763-626b-4eb1-947c-bb56fd506e19" name="Default Changelist" comment="" />
-      <created>1607855139287</created>
+      <changelist id="e167370b-0db9-4678-bc26-bd8e280a0d92" name="Default Changelist" comment="" />
+      <created>1608896774887</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1607855139287</updated>
-      <workItem from="1607855149108" duration="232000" />
-      <workItem from="1607855444905" duration="20787000" />
-      <workItem from="1608080224470" duration="8632000" />
-      <workItem from="1608533854101" duration="25005000" />
-      <workItem from="1608618166406" duration="5955000" />
-      <workItem from="1608627195552" duration="6734000" />
-      <workItem from="1608635402595" duration="2390000" />
-      <workItem from="1608637813699" duration="8661000" />
-      <workItem from="1608704924727" duration="8599000" />
-      <workItem from="1608791649092" duration="5217000" />
+      <updated>1608896774887</updated>
+      <workItem from="1608896782745" duration="162000" />
+      <workItem from="1608897029512" duration="236000" />
+      <workItem from="1608898028930" duration="26000" />
+      <workItem from="1608924875536" duration="116000" />
+      <workItem from="1608931217387" duration="1183000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-    <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-  </component>
-  <component name="XSLT-Support.FileAssociations.UIState">
-    <expand />
-    <select />
   </component>
 </project>
