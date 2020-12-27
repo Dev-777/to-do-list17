@@ -28,9 +28,24 @@ const App = () => {
       .then(() => console.log("post done"));
   };
 
+  const getRequest = () => {
+    axios
+      .get("http://localhost:4000/app/data17")
+      .then((data) => console.log(data, "get"))
+      .catch((err) => console.log(err, "error~~~"));
+  };
+
+  const deleteRequest = () => {
+    axios
+      .delete("http://localhost:4000/app/data1723/5fe882ef5f8789b2bde2dd64")
+      .then(() => console.log("delete done"));
+  };
+
   return (
     <AppWrapper className="App">
       <button onClick={postRequest}>Test post</button>
+      <button onClick={getRequest}>Test get</button>
+      <button onClick={deleteRequest}>Delete</button>
       <AppHeader />
       {!state.loadList ? <Loading /> : null}
       <ConfirmModal />
