@@ -8,6 +8,7 @@ import { loadData } from "./Actions";
 import AppHeader from "./Components/AppHeader";
 
 import { useDispatch, useSelector } from "react-redux";
+import axios from "axios";
 
 const App = () => {
   const state = useSelector((state) => state);
@@ -16,8 +17,20 @@ const App = () => {
     dispatch(loadData());
   }, [state.loadList]);
 
+  const postRequest = () => {
+    axios
+      .post("http://localhost:4000/app/signup", {
+        fullName: "TestName~~~!1",
+        username: "Test!1",
+        email: "test@email.com1",
+        password: "testPass1",
+      })
+      .then(() => console.log("post done"));
+  };
+
   return (
     <AppWrapper className="App">
+      <button onClick={postRequest}>Test post</button>
       <AppHeader />
       {!state.loadList ? <Loading /> : null}
       <ConfirmModal />
