@@ -2,21 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e167370b-0db9-4678-bc26-bd8e280a0d92" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Components/types/Types.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/react-app-env.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/prettier.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/prettier.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/AppHeader.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/AppHeader.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/ListHeader.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/ListHeader.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/ListItem.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/ListItem.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/ToDoList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/ToDoList.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/modals/ConfirmModal.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/modals/ConfirmModal.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/modals/CreateItemFormModal.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/modals/CreateItemFormModal.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/modals/EditItemModal.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/modals/EditItemModal.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -127,7 +113,7 @@
       <workItem from="1609177682299" duration="3045000" />
       <workItem from="1609181317090" duration="2663000" />
       <workItem from="1609184065869" duration="7686000" />
-      <workItem from="1609234861677" duration="1773000" />
+      <workItem from="1609234861677" duration="2269000" />
     </task>
     <servers />
   </component>
