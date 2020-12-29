@@ -1,15 +1,15 @@
-import React from "react";
+import React, { ChangeEvent } from "react";
 import ReactModal from "react-modal";
-import StateHOC from "../HOC/StateHOC";
 import {
   closeEditItemModal,
   editModalSaveButton,
   editOnchange,
 } from "../../Actions";
 import { useDispatch, useSelector } from "react-redux";
+import { StateType } from "../types/Types";
 
 const EditItemModal = () => {
-  const state = useSelector((state) => state);
+  const state = useSelector((state: StateType) => state);
   const dispatch = useDispatch();
   return (
     <>
@@ -30,11 +30,11 @@ const EditItemModal = () => {
         shouldCloseOnEsc={false}
       >
         <textarea
+          rows={10}
+          cols={30}
           defaultValue={state.editModal.editModalDefaultValue}
-          cols="30"
-          rows="10"
           style={{ resize: "none" }}
-          onChange={(e) => {
+          onChange={(e: ChangeEvent<HTMLTextAreaElement>) => {
             return dispatch(editOnchange(e.target.value));
           }}
         />

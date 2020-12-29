@@ -1,7 +1,7 @@
-import React from "react";
+import React, { ChangeEvent, FC } from "react";
 import ReactModal from "react-modal";
 import styled from "styled-components";
-import StateHOC from "../HOC/StateHOC";
+// import StateHOC from "../HOC/StateHOC";
 import {
   openModal,
   closeModal,
@@ -12,9 +12,10 @@ import {
   formDescriptionField,
 } from "../../Actions";
 import { useDispatch, useSelector } from "react-redux";
+import { StateType } from "../types/Types";
 
-const CreateItemFormModal = () => {
-  const state = useSelector((state) => state);
+const CreateItemFormModal: FC = () => {
+  const state = useSelector((state: StateType) => state);
   const dispatch = useDispatch();
   return (
     <>
@@ -42,7 +43,7 @@ const CreateItemFormModal = () => {
             Name
             <input
               type="text"
-              onChange={(e) => {
+              onChange={(e: ChangeEvent<HTMLInputElement>) => {
                 return dispatch(formNameField(e.target.value));
               }}
             />
@@ -57,7 +58,7 @@ const CreateItemFormModal = () => {
             Email
             <input
               type="email"
-              onChange={(e) => {
+              onChange={(e: ChangeEvent<HTMLInputElement>) => {
                 return dispatch(formEmailField(e.target.value));
               }}
             />
@@ -70,7 +71,7 @@ const CreateItemFormModal = () => {
             Description
             <input
               type="text"
-              onChange={(e) => {
+              onChange={(e: ChangeEvent<HTMLInputElement>) => {
                 return dispatch(formDescriptionField(e.target.value));
               }}
             />

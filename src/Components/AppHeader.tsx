@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import CreateItemFormModal from "./modals/CreateItemFormModal";
 
-const AppHeader = () => {
+const AppHeader: React.FC = () => {
   return (
     <>
       <AppHeaderWrapper>

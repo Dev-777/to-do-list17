@@ -2,71 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e167370b-0db9-4678-bc26-bd8e280a0d92" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Components/types/Types.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/react-app-env.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/prettier.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/prettier.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backEnd/node_modules/.bin/semver" beforeDir="false" afterPath="$PROJECT_DIR$/backEnd/node_modules/.bin/semver" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backEnd/node_modules/.yarn-integrity" beforeDir="false" afterPath="$PROJECT_DIR$/backEnd/node_modules/.yarn-integrity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backEnd/node_modules/ansi-align/node_modules/is-fullwidth-code-point/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backEnd/node_modules/ansi-align/node_modules/is-fullwidth-code-point/license" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backEnd/node_modules/ansi-align/node_modules/is-fullwidth-code-point/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backEnd/node_modules/ansi-align/node_modules/is-fullwidth-code-point/readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backEnd/node_modules/ansi-regex/index.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backEnd/node_modules/ansi-regex/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/backEnd/node_modules/ansi-regex/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backEnd/node_modules/ansi-regex/license" beforeDir="false" afterPath="$PROJECT_DIR$/backEnd/node_modules/ansi-regex/license" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backEnd/node_modules/ansi-regex/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/backEnd/node_modules/ansi-regex/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backEnd/node_modules/ansi-regex/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/backEnd/node_modules/ansi-regex/readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backEnd/node_modules/ini/ini.js" beforeDir="false" afterPath="$PROJECT_DIR$/backEnd/node_modules/ini/ini.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backEnd/node_modules/ini/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/backEnd/node_modules/ini/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backEnd/node_modules/is-fullwidth-code-point/index.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backEnd/node_modules/is-fullwidth-code-point/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/backEnd/node_modules/is-fullwidth-code-point/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backEnd/node_modules/is-fullwidth-code-point/license" beforeDir="false" afterPath="$PROJECT_DIR$/backEnd/node_modules/is-fullwidth-code-point/license" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backEnd/node_modules/is-fullwidth-code-point/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/backEnd/node_modules/is-fullwidth-code-point/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backEnd/node_modules/is-fullwidth-code-point/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/backEnd/node_modules/is-fullwidth-code-point/readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backEnd/node_modules/make-dir/node_modules/.bin/semver" beforeDir="false" afterPath="$PROJECT_DIR$/backEnd/node_modules/make-dir/node_modules/.bin/semver" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backEnd/node_modules/nodemon/node_modules/.bin/semver" beforeDir="false" afterPath="$PROJECT_DIR$/backEnd/node_modules/nodemon/node_modules/.bin/semver" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backEnd/node_modules/nodemon/node_modules/semver/CHANGELOG.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backEnd/node_modules/nodemon/node_modules/semver/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backEnd/node_modules/nodemon/node_modules/semver/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backEnd/node_modules/nodemon/node_modules/semver/bin/semver" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backEnd/node_modules/nodemon/node_modules/semver/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backEnd/node_modules/nodemon/node_modules/semver/range.bnf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backEnd/node_modules/nodemon/node_modules/semver/semver.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backEnd/node_modules/nopt/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backEnd/node_modules/nopt/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/backEnd/node_modules/nopt/LICENSE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backEnd/node_modules/nopt/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/backEnd/node_modules/nopt/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backEnd/node_modules/nopt/bin/nopt.js" beforeDir="false" afterPath="$PROJECT_DIR$/backEnd/node_modules/nopt/bin/nopt.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backEnd/node_modules/nopt/examples/my-program.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backEnd/node_modules/nopt/lib/nopt.js" beforeDir="false" afterPath="$PROJECT_DIR$/backEnd/node_modules/nopt/lib/nopt.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backEnd/node_modules/nopt/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/backEnd/node_modules/nopt/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backEnd/node_modules/package-json/node_modules/.bin/semver" beforeDir="false" afterPath="$PROJECT_DIR$/backEnd/node_modules/package-json/node_modules/.bin/semver" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backEnd/node_modules/rc/node_modules/ini/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backEnd/node_modules/rc/node_modules/ini/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backEnd/node_modules/rc/node_modules/ini/ini.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backEnd/node_modules/rc/node_modules/ini/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backEnd/node_modules/require_optional/node_modules/.bin/semver" beforeDir="false" afterPath="$PROJECT_DIR$/backEnd/node_modules/require_optional/node_modules/.bin/semver" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backEnd/node_modules/require_optional/node_modules/semver/CHANGELOG.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backEnd/node_modules/require_optional/node_modules/semver/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backEnd/node_modules/require_optional/node_modules/semver/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backEnd/node_modules/require_optional/node_modules/semver/bin/semver" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backEnd/node_modules/require_optional/node_modules/semver/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backEnd/node_modules/require_optional/node_modules/semver/range.bnf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backEnd/node_modules/require_optional/node_modules/semver/semver.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backEnd/node_modules/semver-diff/node_modules/.bin/semver" beforeDir="false" afterPath="$PROJECT_DIR$/backEnd/node_modules/semver-diff/node_modules/.bin/semver" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backEnd/node_modules/semver/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/backEnd/node_modules/semver/CHANGELOG.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backEnd/node_modules/semver/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/backEnd/node_modules/semver/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backEnd/node_modules/semver/bin/semver.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backEnd/node_modules/semver/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/backEnd/node_modules/semver/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backEnd/node_modules/semver/semver.js" beforeDir="false" afterPath="$PROJECT_DIR$/backEnd/node_modules/semver/semver.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backEnd/node_modules/strip-ansi/index.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backEnd/node_modules/strip-ansi/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/backEnd/node_modules/strip-ansi/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backEnd/node_modules/strip-ansi/license" beforeDir="false" afterPath="$PROJECT_DIR$/backEnd/node_modules/strip-ansi/license" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backEnd/node_modules/strip-ansi/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/backEnd/node_modules/strip-ansi/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backEnd/node_modules/strip-ansi/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/backEnd/node_modules/strip-ansi/readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backEnd/node_modules/touch/node_modules/.bin/nopt" beforeDir="false" afterPath="$PROJECT_DIR$/backEnd/node_modules/touch/node_modules/.bin/nopt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backEnd/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/backEnd/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backEnd/routes/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/backEnd/routes/routes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backEnd/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/backEnd/yarn.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/AppHeader.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/AppHeader.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/ListHeader.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/ListHeader.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/ListItem.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/ListItem.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/ToDoList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/ToDoList.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/modals/ConfirmModal.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/modals/ConfirmModal.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/modals/CreateItemFormModal.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/modals/CreateItemFormModal.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/modals/EditItemModal.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/modals/EditItemModal.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,6 +27,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
+        <option value="TypeScript JSX File" />
       </list>
     </option>
   </component>
@@ -106,7 +57,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="$PROJECT_DIR$/node_modules/prettier" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="settings.javascript.prettier" />
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -172,7 +123,11 @@
       <workItem from="1609054040034" duration="5601000" />
       <workItem from="1609062607881" duration="1391000" />
       <workItem from="1609064083240" duration="2545000" />
-      <workItem from="1609072881709" duration="9072000" />
+      <workItem from="1609072881709" duration="11477000" />
+      <workItem from="1609177682299" duration="3045000" />
+      <workItem from="1609181317090" duration="2663000" />
+      <workItem from="1609184065869" duration="7686000" />
+      <workItem from="1609234861677" duration="1773000" />
     </task>
     <servers />
   </component>

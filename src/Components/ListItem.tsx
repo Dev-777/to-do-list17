@@ -1,10 +1,17 @@
-import React from "react";
+import React, { FC } from "react";
 import styled from "styled-components";
 import { edit } from "../Actions";
 import { useDispatch } from "react-redux";
+import { ListItemProsType } from "./types/Types";
 
-const ListItem = ({ name, email, description, status, index }) => {
-  const dispatch = useDispatch();
+const ListItem: FC<ListItemProsType> = ({
+  name,
+  email,
+  description,
+  status,
+  index,
+}) => {
+  const dispatch: any = useDispatch();
   return (
     <>
       <Main>

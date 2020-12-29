@@ -1,14 +1,13 @@
 import React from "react";
-import StateHOC from "./HOC/StateHOC";
 import ToDoItem from "./ListItem";
 import styled from "styled-components";
 import EditItemModal from "./modals/EditItemModal";
 import ListHeader from "./ListHeader";
 import { useSelector } from "react-redux";
+import { StateType } from "./types/Types";
 
-const ToDoList = () => {
-  const state = useSelector((state) => state);
-
+const ToDoList: React.FC = () => {
+  const state = useSelector((state: StateType) => state);
   return (
     <>
       <EditItemModal />
@@ -17,7 +16,7 @@ const ToDoList = () => {
         <List>
           {state.itemList.map((i, index) => (
             <ToDoItem
-              key={new Date() + index}
+              key={String(new Date()) + index}
               name={i.name}
               email={i.email}
               description={i.description}
