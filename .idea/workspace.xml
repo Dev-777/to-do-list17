@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e167370b-0db9-4678-bc26-bd8e280a0d92" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/pages/SignUp.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,7 +115,7 @@
       <workItem from="1609184065869" duration="7686000" />
       <workItem from="1609234861677" duration="7220000" />
       <workItem from="1609314304647" duration="91000" />
-      <workItem from="1609314516174" duration="1295000" />
+      <workItem from="1609314516174" duration="2085000" />
     </task>
     <servers />
   </component>
