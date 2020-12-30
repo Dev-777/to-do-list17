@@ -7,31 +7,31 @@ const SignUp: FC = () => {
       <Main>
         <SignupForm>
           <FormTitle>SignUp Form</FormTitle>
-          <hr />
-          <label>
-            Name
+          <SignUpFormLine />
+          <SignUpFormLabel>
+             <p>Name</p>
             <FormName />
-          </label>
-          <label>
+          </SignUpFormLabel>
+          <SignUpFormLabel>
             Surname
             <FormSurname />
-          </label>
-          <label>
+          </SignUpFormLabel>
+          <SignUpFormLabel>
             Email
             <FormEmail />
-          </label>
-          <label>
+          </SignUpFormLabel>
+          <SignUpFormLabel>
             Password
             <FormPassword />
-          </label>
-          <label>
+          </SignUpFormLabel>
+          <SignUpFormLabel>
             Repeat Password
             <FormRepeatPassword />
-          </label>
-          <div>
+          </SignUpFormLabel>
+          <SignUpFormButtonsContainer>
             <SignUpButton>SignUp</SignUpButton>
             <CancelSignUp>Cancel</CancelSignUp>
-          </div>
+          </SignUpFormButtonsContainer>
         </SignupForm>
       </Main>
     </>
@@ -50,14 +50,17 @@ const SignupForm = styled("div")`
   box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
   margin: 20px 0 0 0;
   flex-direction: column;
+  align-items:center;
 `;
+const SignUpFormLine=styled('hr')`
+width:80%`
 const FormTitle = styled("h1")`
   font-size: 25px;
 `;
 
 const FormName = styled("input")`
   height: 30px;
-  margin: 5px 0 0 0;
+  margin: 4px 0 0 0;
   font-size: 20px;
 `;
 const FormSurname = styled(FormName)``;
@@ -71,5 +74,13 @@ const SignUpButton = styled("button")`
 const CancelSignUp = styled("button")`
   background-color: #68a9ff;
 `;
+const SignUpFormLabel=styled('label')`
+display:flex;
+flex-direction: column;
+width: 75%;
+margin: 8px 0 0 0;
+`
+const SignUpFormButtonsContainer =styled('div')`
+margin:20px 0 0 0 `
 
 export default SignUp;
