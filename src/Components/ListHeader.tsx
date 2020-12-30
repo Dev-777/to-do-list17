@@ -6,7 +6,7 @@ const ListHeader: React.FC = () => {
     <>
       <Main>
         <HeaderItem>
-          <Text>Name</Text>
+          <Text>Name17</Text>
         </HeaderItem>
         <HeaderItem>
           <Text>Email</Text>
@@ -50,5 +50,4 @@ const HeaderItemEdit = styled(HeaderItem)`
   justify-content: center;
   border: 0;
 `;
-
 export default ListHeader;
