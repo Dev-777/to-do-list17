@@ -13,8 +13,9 @@ import {
   editOnchangeFunc,
   validationFunc,
 } from "./ReducerFunctions";
+import { StateType } from "../types/Types";
 
-const initialState = {
+const initialState: StateType = {
   createTaskModalIsOpen: false,
   confirmModalIsOpen: false,
   editItemModalIsOpen: false,
@@ -38,7 +39,7 @@ const initialState = {
   },
 };
 
-export const reducer = (state = initialState, action) => {
+export const reducer = (state = initialState, action: any) => {
   console.log(state, "state");
   switch (action.type) {
     case "PUSH_DATA":
