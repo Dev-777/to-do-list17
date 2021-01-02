@@ -4,9 +4,9 @@ import {
   closeEditItemModal,
   editModalSaveButton,
   editOnchange,
-} from "../../Actions";
+} from "../../store/appActionsAndReducers/Actions";
 import { useDispatch, useSelector } from "react-redux";
-import { StateType } from "../types/Types";
+import { StateType } from "../../types/Types";
 
 const EditItemModal = () => {
   const state = useSelector((state: StateType) => state);

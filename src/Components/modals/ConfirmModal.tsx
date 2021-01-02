@@ -1,8 +1,8 @@
 import React, { FC } from "react";
 import ReactModal from "react-modal";
-import { cancelConfirmModal, confirmConfirmModal } from "../../Actions";
+import { cancelConfirmModal, confirmConfirmModal } from "../../store/appActionsAndReducers/Actions";
 import { useDispatch, useSelector } from "react-redux";
-import { StateType } from "../types/Types";
+import { StateType } from "../../types/Types";
 
 const ConfirmModal: FC = () => {
   const state = useSelector((state: StateType) => state);

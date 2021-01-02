@@ -5,8 +5,8 @@ import {
   CONFIRM_CONFIRM_MODAL,
   pushData,
   EDIT_MODAL_SAVE_BUTTON,
-} from "./Actions";
-import { getFunc } from "./Api";
+} from "../../store/appActionsAndReducers/Actions";
+import { getFunc } from "../../Api";
 import axios from "axios";
 
 function* workerLoadData() {

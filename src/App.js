@@ -4,7 +4,7 @@ import styled from "styled-components";
 import Background from "./assets/images/seamless-pattern-colored-pencils-vector-876060.jpg";
 import ConfirmModal from "./Components/modals/ConfirmModal";
 import Loading from "./Components/Loading";
-import { loadData } from "./Actions";
+import { loadData } from "./store/appActionsAndReducers/Actions";
 import AppHeader from "./Components/AppHeader";
 
 import { useDispatch, useSelector } from "react-redux";
@@ -19,7 +19,7 @@ const App = () => {
 
   const postRequest = () => {
     axios
-      .post("http://localhost:4000/app/signup", {
+      .post("https://sign-up-backend.herokuapp.com/app/signup", {
         fullName: "TestName~~~!1",
         username: "Test!1",
         email: "test@email.com1",
@@ -30,19 +30,35 @@ const App = () => {
 
   const getRequest = () => {
     axios
-      .get("http://localhost:4000/app/data17")
+      .get("https://sign-up-backend.herokuapp.com/app/data17")
       .then((data) => console.log(data, "get"))
       .catch((err) => console.log(err, "error~~~"));
   };
 
   const deleteRequest = () => {
     axios
-      .delete("http://localhost:4000/app/data1723/5fe882ef5f8789b2bde2dd64")
+      .delete("https://sign-up-backend.herokuapp.com/app/data1723/5fe882ef5f8789b2bde2dd64")
       .then(() => console.log("delete done"));
   };
 
+
+  const randomFunc=()=>{
+    const k1 = Math.floor(Math.random()*10);
+    const obj1 = {
+        num: null,
+    }
+
+    console.log(k1, 'random number');
+
+    obj1.num = k1;
+    console.log(obj1, 'object number');
+    
+  }
+  
+
   return (
     <AppWrapper className="App">
+        <button onClick={randomFunc}>Random</button>
       <button onClick={postRequest}>Test post</button>
       <button onClick={getRequest}>Test get</button>
       <button onClick={deleteRequest}>Delete</button>

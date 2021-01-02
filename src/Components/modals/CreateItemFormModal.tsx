@@ -10,9 +10,9 @@ import {
   formNameField,
   formEmailField,
   formDescriptionField,
-} from "../../Actions";
+} from "../../store/appActionsAndReducers/Actions";
 import { useDispatch, useSelector } from "react-redux";
-import { StateType } from "../types/Types";
+import { StateType } from "../../types/Types";
 
 const CreateItemFormModal: FC = () => {
   const state = useSelector((state: StateType) => state);

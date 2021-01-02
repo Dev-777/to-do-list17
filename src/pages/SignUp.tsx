@@ -2,6 +2,11 @@ import React, { FC } from "react";
 import styled from "styled-components";
 
 const SignUp: FC = () => {
+
+    // const signUpClick = ()=>{
+        
+    // } 
+
   return (
     <>
       <Main>
@@ -17,15 +22,15 @@ const SignUp: FC = () => {
             <FormSurname />
           </SignUpFormLabel>
           <SignUpFormLabel>
-            Email
+            <p>Email</p>
             <FormEmail />
           </SignUpFormLabel>
           <SignUpFormLabel>
-            Password
+           <p>Password</p> 
             <FormPassword />
           </SignUpFormLabel>
           <SignUpFormLabel>
-            Repeat Password
+           <p>Repeat Password</p> 
             <FormRepeatPassword />
           </SignUpFormLabel>
           <SignUpFormButtonsContainer>

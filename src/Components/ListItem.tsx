@@ -1,8 +1,8 @@
 import React, { FC } from "react";
 import styled from "styled-components";
-import { edit } from "../Actions";
+import { edit } from "../store/appActionsAndReducers/Actions";
 import { useDispatch } from "react-redux";
-import { ListItemProsType } from "./types/Types";
+import { ListItemProsType } from "../types/Types";
 
 const ListItem: FC<ListItemProsType> = ({
   name,
