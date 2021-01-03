@@ -4,10 +4,9 @@ import styled from "styled-components";
 import EditItemModal from "./modals/EditItemModal";
 import ListHeader from "./ListHeader";
 import { useSelector } from "react-redux";
-import { StateType } from "./types/Types";
 
 const ToDoList: React.FC = () => {
-  const state = useSelector((state: StateType) => state);
+  const state = useSelector((state: any) => state.reducer);  
   return (
     <>
       <EditItemModal />

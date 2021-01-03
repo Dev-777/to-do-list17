@@ -5,7 +5,7 @@ import {
   CONFIRM_CONFIRM_MODAL,
   pushData,
   EDIT_MODAL_SAVE_BUTTON,
-} from "../../store/appActionsAndReducers/Actions";
+} from "../appActionsAndReducers/Actions";
 import { getFunc } from "../../Api";
 import axios from "axios";
 
@@ -20,12 +20,14 @@ function* watchLoadData() {
 
 function* workerPushData() {
   const state = yield select();
+ 
+  
   yield axios
     .post("https://5fe1946a04f0780017de9dfa.mockapi.io/AS/todo", {
       withCredentials: true,
-      name: state.item.name,
-      email: state.item.email,
-      description: state.item.description,
+      name: state.reducer.item.name,
+      email: state.reducer.item.email,
+      description: state.reducer.item.description,
       status: "In progress",
     })
     .then(() => {
@@ -48,7 +50,7 @@ function* workerUpdateData() {
         state.editModal.editableItemIndex + 1
       }`,
       {
-        description: state.editModal.editModalDefaultValue,
+        description: state.reducer.editModal.editModalDefaultValue,
       }
     )
     .then(() => console.log("put"));

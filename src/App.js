@@ -11,7 +11,7 @@ import { useDispatch, useSelector } from "react-redux";
 import axios from "axios";
 
 const App = () => {
-  const state = useSelector((state) => state);
+  const state = useSelector((state) => state.reducer);  
   const dispatch = useDispatch();
   useMemo(() => {
     dispatch(loadData());

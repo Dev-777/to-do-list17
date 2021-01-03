@@ -6,10 +6,10 @@ import {
   editOnchange,
 } from "../../store/appActionsAndReducers/Actions";
 import { useDispatch, useSelector } from "react-redux";
-import { StateType } from "../../types/Types";
+
 
 const EditItemModal = () => {
-  const state = useSelector((state: StateType) => state);
+  const state = useSelector((state: any) => state.reducer);  
   const dispatch = useDispatch();
   return (
     <>

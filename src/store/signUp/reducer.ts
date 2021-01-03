@@ -7,10 +7,7 @@ const initialState: any = {
 
 export const signUpReducer: any = (state=initialState, actions: any)=>{
 
-    switch(actions.type){
-
-        default:
+   
             return state;
-    }
 }
 

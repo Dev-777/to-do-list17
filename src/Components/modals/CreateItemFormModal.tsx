@@ -12,10 +12,10 @@ import {
   formDescriptionField,
 } from "../../store/appActionsAndReducers/Actions";
 import { useDispatch, useSelector } from "react-redux";
-import { StateType } from "../../types/Types";
 
 const CreateItemFormModal: FC = () => {
-  const state = useSelector((state: StateType) => state);
+  const state = useSelector((state: any) => state.reducer);  
+
   const dispatch = useDispatch();
   return (
     <>
