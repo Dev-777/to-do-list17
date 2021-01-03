@@ -1,12 +1,30 @@
-import React, { FC } from "react";
+import React, { FC, ChangeEvent } from "react";
 import styled from "styled-components";
+import { useDispatch, useSelector } from "react-redux";
+import {nameOnchange, surnameOnchange, emailOnchange, passwordOnchange} from "../store/signUp/actions"
 
 const SignUp: FC = () => {
 
-    // const signUpClick = ()=>{
-        
-    // } 
-
+const state = useSelector((state:any)=> state) 
+ const dispatch =useDispatch();
+ 
+ const name: any = (event: ChangeEvent<HTMLInputElement> )=>{
+   dispatch(nameOnchange(event))
+ }
+ const surName: any = (event: ChangeEvent<HTMLInputElement> )=>{
+   dispatch(surnameOnchange(event))
+   
+ }
+  const email: any = (event: ChangeEvent<HTMLInputElement> )=>{
+   dispatch(emailOnchange(event))
+ }
+  const password: any = (event: ChangeEvent<HTMLInputElement> )=>{
+   dispatch(passwordOnchange(event))
+ }
+ 
+ console.log(state, "root state")
+ 
+ 
   return (
     <>
       <Main>
@@ -15,19 +33,19 @@ const SignUp: FC = () => {
           <SignUpFormLine />
           <SignUpFormLabel>
              <p>Name</p>
-            <FormName />
+            <FormName  onChange={(event)=>name(event.target.value)}/>
           </SignUpFormLabel>
           <SignUpFormLabel>
             Surname
-            <FormSurname />
+            <FormSurname onChange={(event)=>surName(event.target.value)}/>
           </SignUpFormLabel>
           <SignUpFormLabel>
             <p>Email</p>
-            <FormEmail />
+            <FormEmail onChange={(event)=>email(event.target.value)}/>
           </SignUpFormLabel>
           <SignUpFormLabel>
            <p>Password</p> 
-            <FormPassword />
+            <FormPassword onChange={(event)=>password(event.target.value)}/>
           </SignUpFormLabel>
           <SignUpFormLabel>
            <p>Repeat Password</p> 

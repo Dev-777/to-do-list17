@@ -11,7 +11,7 @@ import { useDispatch, useSelector } from "react-redux";
 import axios from "axios";
 
 const App = () => {
-  const state = useSelector((state) => state.reducer);  
+  const state = useSelector((state) => state.reducer);
   const dispatch = useDispatch();
   useMemo(() => {
     dispatch(loadData());
@@ -37,28 +37,27 @@ const App = () => {
 
   const deleteRequest = () => {
     axios
-      .delete("https://sign-up-backend.herokuapp.com/app/data1723/5fe882ef5f8789b2bde2dd64")
+      .delete(
+        "https://sign-up-backend.herokuapp.com/app/data1723/5fe882ef5f8789b2bde2dd64"
+      )
       .then(() => console.log("delete done"));
   };
 
-
-  const randomFunc=()=>{
-    const k1 = Math.floor(Math.random()*10);
+  const randomFunc = () => {
+    const k1 = Math.floor(Math.random() * 10);
     const obj1 = {
-        num: null,
-    }
+      num: null,
+    };
 
-    console.log(k1, 'random number');
+    console.log(k1, "random number");
 
     obj1.num = k1;
-    console.log(obj1, 'object number');
-    
-  }
-  
+    console.log(obj1, "object number");
+  };
 
   return (
     <AppWrapper className="App">
-        <button onClick={randomFunc}>Random</button>
+      <button onClick={randomFunc}>Random</button>
       <button onClick={postRequest}>Test post</button>
       <button onClick={getRequest}>Test get</button>
       <button onClick={deleteRequest}>Delete</button>
