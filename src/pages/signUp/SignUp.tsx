@@ -2,11 +2,10 @@ import React, { FC, ChangeEvent } from "react";
 import styled from "styled-components";
 import { useDispatch, useSelector } from "react-redux";
 import {nameOnchange, surnameOnchange, emailOnchange, passwordOnchange, repeatPasswordOnchange, nameValidationAction, surnameValidationAction, emailValidationAction, passwordValidationAction, repeatPasswordValidationAction, } from "../../store/signUp/actions"
-import { stat } from "fs";
+import { Link } from "react-router-dom";
 
 
 const SignUp: FC = () => {
-
 const state = useSelector((state:any)=> state.signUpReducer) 
 const dispatch =useDispatch();
 
@@ -21,15 +20,11 @@ const signUpClicked: any = ()=>{
     const emailRegexp = /^[^\s@]+@([^\s@.,]+\.)+[^\s@.,]{2,}$/;
     const passRegexp = /^.{8,30}$/;
 
-    
-
-    
     if(!regExpNameSurname.test(name) && !state.validation.name){
         dispatch(nameValidationAction())
     }else if(regExpNameSurname.test(name) && state.validation.name){
         dispatch(nameValidationAction())
     }
-
     if(!regExpNameSurname.test(surname) && !state.validation.surname){
         dispatch(surnameValidationAction())
     }else if(regExpNameSurname.test(surname) && state.validation.surname){
@@ -50,13 +45,14 @@ const signUpClicked: any = ()=>{
     }else if(password === repeatPassword && state.validation.repeatPassword){
         dispatch(repeatPasswordValidationAction())
     }
-  
-    
 
-
-
-
-   
+    if(name && !state.validation.name 
+        && !state.validation.surname 
+        && !state.validation.email 
+        && !state.validation.password 
+        && !state.validation.repeatPassword){
+            dispatch()
+        }
     
 }
  
@@ -100,7 +96,9 @@ const signUpClicked: any = ()=>{
            {state.validation.repeatPassword ? (
             <p style={{color:"red", fontSize: 15}}>wrong</p>):null}
           <SignUpFormButtonsContainer>
-            <SignUpButton onClick={signUpClicked}>SignUp</SignUpButton>
+            <Link to={state.approve}>
+                <SignUpButton onClick={signUpClicked}>SignUp</SignUpButton>
+            </Link>
             <CancelSignUp>Cancel</CancelSignUp>
           </SignUpFormButtonsContainer>
         </SignupForm>

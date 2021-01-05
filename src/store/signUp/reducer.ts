@@ -13,7 +13,8 @@ const initialState: any = {
         email:false,
         password:false,
         repeatPasword:false
-    }
+    },
+    approve: '/signup',
 }
 
 export const signUpReducer: any = (state: any=initialState, actions: any)=>{

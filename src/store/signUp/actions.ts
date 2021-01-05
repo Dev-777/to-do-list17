@@ -46,3 +46,4 @@ export const repeatPasswordValidationAction:any=()=>{
     return {type: REPEAT_PASSWORD_VALIDATION}
 }
 
+export const SHOW_APPROVE_PAGE: string = 'SHOW_APPROVE_PAGE';
