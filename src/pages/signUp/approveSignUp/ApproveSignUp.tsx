@@ -1,17 +1,18 @@
 import React from 'react';
 
 
-const ApproveSignUp: any = ()=>{
+const ApproveSignUp: any = () => {
 
     return (
-    <>
-        <div>
-            <label>
-                <p>write approve Code</p>
-                <input/>
-            </label>
-        </div>
-    </>
+        <>
+            <div>
+                <label>
+                    <p>We send the approval code in your email, please write that code in input to complete registration</p>
+                    <input />
+                    <button>ok</button>
+                </label>
+            </div>
+        </>
     )
 }
 

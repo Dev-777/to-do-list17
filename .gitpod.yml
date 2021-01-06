@@ -5,3 +5,4 @@ tasks:
 vscode:
   extensions:
     - laurenttreguier.vscode-simple-icons@1.13.5:3OAux9UYh8Iihx9a8s2YJA==
+    - esbenp.prettier-vscode@5.8.0:cd2Jz796EPVnD5zeCyctPw==
