@@ -1,40 +1,34 @@
+import React from "react";
 import axios from "axios";
 
-const url = "https://5fe1946a04f0780017de9dfa.mockapi.io/AS/todo";
-
-export const getFuncTest = () => {
-  return axios({
-    method: "get",
-    url: url,
-  }).then((res) => console.log(res.data));
-};
-
-export const postFuncTest = (state) => {
-  console.log(state, "post State");
-  const config = {
-    withCredentials: true,
-    name: state.item.name,
-    email: state.item.email,
-    description: state.item.description,
-    status: "In progress",
+const TestApi = () => {
+  const postF = () => {
+    axios("http://localhost:4000/app/signup", {
+      method: "POST",
+      headers: {
+        "content-type": "application/json",
+      },
+      data: {
+        name: 223,
+      },
+    })
+      .then((response) => response.data)
+      .catch((error) => {
+        throw error;
+      });
   };
 
-  axios.post(url, config).then((response) => console.log(response, "post"));
-};
-
-export const putFuncTest = () => {
-  const config = {
-    // withCredentials: true,
-    name: "Arsen",
+  const getF = () => {
+    axios.get("http://localhost:4000/get").then(() => {
+      console.log("get done");
+    });
   };
-
-  return axios
-    .put("https://5fe1946a04f0780017de9dfa.mockapi.io/AS/todo/1", config)
-    .then((response) => console.log("put"));
+  return (
+    <>
+      <button onClick={postF}>post</button>
+      <button onClick={getF}>get</button>
+    </>
+  );
 };
 
-export const deleteFuncTest = () => {
-  return axios
-    .delete(`https://5fe1946a04f0780017de9dfa.mockapi.io/AS/todo/`)
-    .then((response) => console.log("delete"));
-};
+export default TestApi;

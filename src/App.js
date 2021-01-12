@@ -43,21 +43,9 @@ const App = () => {
       .then(() => console.log("delete done"));
   };
 
-  const randomFunc = () => {
-    const k1 = Math.floor(Math.random() * 10);
-    const obj1 = {
-      num: null,
-    };
-
-    console.log(k1, "random number");
-
-    obj1.num = k1;
-    console.log(obj1, "object number");
-  };
 
   return (
     <AppWrapper className="App">
-      <button onClick={randomFunc}>Random</button>
       <button onClick={postRequest}>Test post</button>
       <button onClick={getRequest}>Test get</button>
       <button onClick={deleteRequest}>Delete</button>
