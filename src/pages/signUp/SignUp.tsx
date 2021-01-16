@@ -13,7 +13,7 @@ import {
   passwordValidationAction,
   repeatPasswordValidationAction,
   postSignUp,
-} from "../../store/signUp/actions";
+} from "../../store/reducers/signUp/actions";
 import { Link } from "react-router-dom";
 
 const SignUp: FC = () => {
@@ -80,7 +80,7 @@ const SignUp: FC = () => {
       !state.validation.email &&
       !state.validation.password &&
       !state.validation.repeatPassword
-      ? "/approvesignup"
+      ? "/approve"
       : "/signup";
   };
 

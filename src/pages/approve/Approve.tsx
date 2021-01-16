@@ -16,10 +16,9 @@ const Approve: FC = () => {
 
 const ApproveWrapper = styled("div")`
   display: flex;
-  margin: 0 auto;
+  margin: 25px auto;
   width: 600px;
   height: 500px;
-  border: 1px solid black;
   flex-direction: column;
   align-items: center;
 `;

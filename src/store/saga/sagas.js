@@ -5,11 +5,11 @@ import {
   CONFIRM_CONFIRM_MODAL,
   pushData,
   EDIT_MODAL_SAVE_BUTTON,
-} from "../appActionsAndReducers/Actions";
+} from "../reducers/appActionsAndReducers/Actions";
 import { getFunc } from "../../Api";
 import axios from "axios";
 import { watchSignUp } from "./signUpSaga/signUpSaga";
-import { watchApproveSignUp } from "./approveSignUp/approveSignUpSaga";
+import { watchApprove } from "./approveSaga/approveSaga";
 
 function* workerLoadData() {
   const data = yield call(() => getFunc());
@@ -71,6 +71,6 @@ export function* rootSaga() {
     watchPushData(),
     watchUpdateData(),
     watchSignUp(),
-    watchApproveSignUp(),
+    watchApprove(),
   ]);
 }

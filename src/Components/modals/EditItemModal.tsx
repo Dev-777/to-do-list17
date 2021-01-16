@@ -4,7 +4,7 @@ import {
   closeEditItemModal,
   editModalSaveButton,
   editOnchange,
-} from "../../store/appActionsAndReducers/Actions";
+} from "../../store/reducers/appActionsAndReducers/Actions";
 import { useDispatch, useSelector } from "react-redux";
 
 const EditItemModal = () => {

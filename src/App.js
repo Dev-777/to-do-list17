@@ -4,7 +4,7 @@ import styled from "styled-components";
 import Background from "./assets/images/seamless-pattern-colored-pencils-vector-876060.jpg";
 import ConfirmModal from "./Components/modals/ConfirmModal";
 import Loading from "./Components/loadings/Loading";
-import { loadData } from "./store/appActionsAndReducers/Actions";
+import { loadData } from "./store/reducers/appActionsAndReducers/Actions";
 import AppHeader from "./Components/AppHeader";
 
 import { useDispatch, useSelector } from "react-redux";

@@ -13,7 +13,7 @@ import {
   editOnchangeFunc,
   validationFunc,
 } from "./ReducerFunctions";
-import { StateType } from "../../../types/Types";
+import { StateType } from "../../../../types/Types";
 
 const initialState: StateType = {
   createTaskModalIsOpen: false,

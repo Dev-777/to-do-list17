@@ -15,7 +15,7 @@ ReactDOM.render(
       <Router>
         <Route path="/app" component={App} />
         <Route path="/signup" component={SignUp} />
-        <Route path="/approvesignup" component={Approve} />
+        <Route path="/approve" component={Approve} />
         <Route path="/test" component={TestApi} />
       </Router>
     </Provider>

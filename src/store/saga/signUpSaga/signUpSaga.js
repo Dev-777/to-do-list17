@@ -1,5 +1,5 @@
 import { put, takeLatest, select } from "redux-saga/effects";
-import { POST_ISGN_UP, resetSignUpForm } from "../../signUp/actions";
+import { POST_ISGN_UP, resetSignUpForm } from "../../reducers/signUp/actions";
 import axios from "axios";
 
 function* workerSignUp() {
@@ -11,7 +11,7 @@ function* workerSignUp() {
       email: state.signUpReducer.fieldsValue.email,
       password: state.signUpReducer.fieldsValue.password,
     })
-    .then(() => console.log("post done~~"));
+    .then(() => console.log("post signUp done~~"));
 
   yield put(resetSignUpForm());
 }

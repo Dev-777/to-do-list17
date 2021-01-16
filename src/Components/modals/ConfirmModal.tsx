@@ -1,10 +1,13 @@
 import React, { FC } from "react";
 import ReactModal from "react-modal";
-import { cancelConfirmModal, confirmConfirmModal } from "../../store/appActionsAndReducers/Actions";
+import {
+  cancelConfirmModal,
+  confirmConfirmModal,
+} from "../../store/reducers/appActionsAndReducers/Actions";
 import { useDispatch, useSelector } from "react-redux";
 
 const ConfirmModal: FC = () => {
-  const state = useSelector((state: any) => state.reducer);  
+  const state = useSelector((state: any) => state.reducer);
   const dispatch = useDispatch();
   return (
     <>
