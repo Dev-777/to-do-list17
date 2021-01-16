@@ -6,7 +6,7 @@ import { Provider } from "react-redux";
 import store from "./store/Store";
 import SignUp from "./pages/signUp/SignUp";
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import ApproveSignUp from "./pages/signUp/approveSignUp/ApproveSignUp";
+import Approve from "./pages/approve/Approve";
 import TestApi from "./Tests/TestApi";
 
 ReactDOM.render(
@@ -15,7 +15,7 @@ ReactDOM.render(
       <Router>
         <Route path="/app" component={App} />
         <Route path="/signup" component={SignUp} />
-        <Route path="/approvesignup" component={ApproveSignUp} />
+        <Route path="/approvesignup" component={Approve} />
         <Route path="/test" component={TestApi} />
       </Router>
     </Provider>

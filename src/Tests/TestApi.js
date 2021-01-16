@@ -12,15 +12,15 @@ const TestApi = () => {
         name: 223,
       },
     })
-      .then((response) => response.data)
+      .then((response) => console.log(response, "post res"))
       .catch((error) => {
         throw error;
       });
   };
 
   const getF = () => {
-    axios.get("http://localhost:4000/get").then(() => {
-      console.log("get done");
+    axios.get("http://localhost:4000/app/data17").then((data) => {
+      console.log(data, "get done");
     });
   };
   return (

@@ -1,7 +1,6 @@
 import { put, takeLatest, select } from "redux-saga/effects";
-import { resetSignUpForm } from "../../signUp/actions";
 import axios from "axios";
-import { POST_CODE } from "../../signUp/approveSignUp/actions";
+import { POST_CODE, success } from "../../signUp/approveSignUp/actions";
 
 function* workerApproveSignUp() {
   const state = yield select();
@@ -11,7 +10,7 @@ function* workerApproveSignUp() {
     })
     .then(() => console.log("post done~~"));
 
-  yield put(resetSignUpForm());
+  yield put(success());
 }
 
 export function* watchApproveSignUp() {

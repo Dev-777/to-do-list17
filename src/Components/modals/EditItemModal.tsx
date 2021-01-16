@@ -7,9 +7,8 @@ import {
 } from "../../store/appActionsAndReducers/Actions";
 import { useDispatch, useSelector } from "react-redux";
 
-
 const EditItemModal = () => {
-  const state = useSelector((state: any) => state.reducer);  
+  const state = useSelector((state: any) => state.reducer);
   const dispatch = useDispatch();
   return (
     <>

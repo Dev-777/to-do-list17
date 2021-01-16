@@ -3,7 +3,7 @@ import ToDoList from "./Components/ToDoList";
 import styled from "styled-components";
 import Background from "./assets/images/seamless-pattern-colored-pencils-vector-876060.jpg";
 import ConfirmModal from "./Components/modals/ConfirmModal";
-import Loading from "./Components/Loading";
+import Loading from "./Components/loadings/Loading";
 import { loadData } from "./store/appActionsAndReducers/Actions";
 import AppHeader from "./Components/AppHeader";
 
@@ -42,7 +42,6 @@ const App = () => {
       )
       .then(() => console.log("delete done"));
   };
-
 
   return (
     <AppWrapper className="App">
