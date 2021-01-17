@@ -5,7 +5,7 @@ import Background from "./assets/images/seamless-pattern-colored-pencils-vector-
 import ConfirmModal from "./Components/modals/ConfirmModal";
 import Loading from "./Components/loadings/Loading";
 import { loadData } from "./store/reducers/appActionsAndReducers/Actions";
-import AppHeader from "./Components/AppHeader";
+import Header from "./Components/header/Header";
 
 import { useDispatch, useSelector } from "react-redux";
 import axios from "axios";
@@ -48,7 +48,7 @@ const App = () => {
       <button onClick={postRequest}>Test post</button>
       <button onClick={getRequest}>Test get</button>
       <button onClick={deleteRequest}>Delete</button>
-      <AppHeader />
+      <Header />
       {!state.loadList ? <Loading /> : null}
       <ConfirmModal />
       <ToDoList />

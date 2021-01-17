@@ -19,7 +19,7 @@ import { Link } from "react-router-dom";
 const SignUp: FC = () => {
   const state = useSelector((state: any) => state.signUpReducer);
   const dispatch = useDispatch();
-  const onchange: any = (event, dispatch: any, actions: any) => {
+  const onchange: any = (event: string, dispatch: any, actions: any) => {
     dispatch(actions(event));
   };
   const signUpClicked: any = () => {
